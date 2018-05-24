@@ -1,0 +1,9 @@
+.bg-cover{
+  @extend %bg-cover;
+}
+.center-embed{
+  text-align: center;
+}
+.center-embed iframe{
+  display: inline-block!important;
+}

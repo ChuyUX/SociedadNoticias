@@ -1,0 +1,17 @@
+blockquote{
+  border-left: 1px solid $primary;
+  color: $primary;
+  font-size: $font-size-lg;
+  font-weight: bold;
+  padding-left: 15px;
+}
+h5 a,
+h6 a{
+  color: $body-color;
+}
+
+@include media-breakpoint-up(md) {
+  body, h6{
+    font-size: 1.125rem;
+  }
+}

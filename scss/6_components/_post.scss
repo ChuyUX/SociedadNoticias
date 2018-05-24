@@ -1,0 +1,103 @@
+.post{
+  padding-top: 30px;
+}
+.post__content > *:not(.post__widget){
+  font-family: $font-family-content;
+}
+.post__content .gallery-item{
+  display: inline-block;
+}
+.post__widget{
+  border-bottom: 2px solid #CBCBCB;
+  border-top: 8px solid #CBCBCB;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.post__meta{
+  font-size: $font-size-sm;
+}
+.post__gallery .slick-prev,
+.post__gallery .slick-next{
+  height: 32px;
+}
+.post__gallery .slick-prev:before,
+.post__gallery .slick-next:before{
+  font-family: 'icomoon';
+  font-size: 32px;
+}
+.post__gallery .slick-prev{
+  left: 10px;
+  z-index: 1;
+}
+.post__gallery .slick-next{
+  right: 10px;
+}
+.post__gallery .slick-prev:before{
+  content: "\f104";
+}
+.post__gallery .slick-next:before{
+  content: "\f105";
+}
+.post__preview{
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  height: 25vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.post__preview-btn{
+  align-self: center;
+  font-family: $font-family-base;
+}
+.bubble{
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+  text-align: right;
+}
+.bubble__items{
+  margin-right: 10px;
+  position: absolute;
+  right: 36px;
+  text-align: right;
+  top: 3px;
+  width: 200px;
+}
+.bubble__action{
+  background: $primary;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  height: 36px;
+  line-height: 39px;
+  text-align: center;
+  width: 36px;
+}
+@include media-breakpoint-up(md) {
+  .post__widget.float-md-left,
+  .post__widget.float-md-right{
+    width: 50%;
+  }
+  .post__video--fixed{
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    width: 250px;
+  }
+  .post__preview{
+    display: none;
+  }
+  .bubble{
+    display: none;
+  }
+}

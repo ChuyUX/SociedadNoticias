@@ -1,0 +1,75 @@
+.navbar{
+  background: #D8D8D8;
+}
+.navbar-brand{
+  border-bottom: 1px solid white;
+  color: $primary;
+  display: block;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.navbar-light .navbar-brand{
+  color: $primary;
+}
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(124,0,80)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler{
+  border: none;
+  color: $primary;
+}
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus{
+  color: $primary;
+}
+.navbar-collapse{
+  margin: .5rem -15px 0;
+}
+.navbar-collapse.show{
+  border-top: 2px solid white;
+}
+.navbar-nav{
+  border-bottom: 1px solid white;
+  font-size: 1rem;
+  padding: 0 15px;
+}
+header .navbar-light .navbar-nav .nav-link{
+  color: $body-color;
+  font-weight: bold;
+}
+.nav-secondary{
+  font-size: $font-size-sm;
+  font-weight: bold;
+  padding: 10px 15px 0;
+}
+.nav-secondary .nav-link{
+  color: $body-color;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-srch{
+  padding: 15px 30px;
+  position: relative;
+}
+.navbar-srch__btn{
+  background: none;
+  border: none;
+  color: $primary;
+  font-size: 1.5rem;
+  line-height: 38px;
+  height: 38px;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+header{
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header--fixed{
+  position: fixed;
+}
